@@ -1,8 +1,4 @@
-# import sqlite3
-# import mysql.connector
-# import sqlite3
 import pymysql
-# import pandas as pd
 from tkinter import *
 import tkinter.ttk as ttk
 
@@ -50,7 +46,6 @@ def DisplayForm():
     scrollbarx.config(command=tree.xview)
     scrollbarx.pack(side=BOTTOM, fill=X)
     #setting headings for the columns
-#    tree.heading('ID', text="ID", anchor=W)
     tree.heading('API', text="API", anchor=W)
     tree.heading('PF', text="PF", anchor=W)
     tree.heading('PEG_600', text="PEG_600", anchor=W)
@@ -80,7 +75,6 @@ def DisplayForm():
     tree.column('#11', stretch=NO, minwidth=0, width=40)
     tree.column('#12', stretch=NO, minwidth=0, width=100)
     tree.column('#13', stretch=NO, minwidth=0, width=100)
-#    tree.column('#14', stretch=NO, minwidth=0, width=120)
     
     tree.pack()
     DisplayData()
@@ -101,13 +95,7 @@ def SearchRecord():
             db='book2'
             )
             cursor = connection.cursor()
-
-
-            # sql3 = "SELECT * FROM `book_details2`"
-            # cursor.execute(sql3)
-            # fetch = cursor.fetchall()
-            
-            
+        
             cursor.execute("SELECT * FROM book_details2 WHERE API LIKE %s", \
                            ('%' + str(SEARCH.get()) + '%',))
             fetch = cursor.fetchall()    
@@ -122,13 +110,6 @@ def SearchRecord():
             connection.commit()
             connection.close()
                 
-        
-        #select query with where clause
-        #cursor2 = db.execute("SELECT * FROM book_details2 WHERE API LIKE ?", \
-        #                    ('%' + str(SEARCH.get()) + '%',))
-        #fetch all matching records
-
-        #db.close()
 #defining function to access data from SQLite database
 def DisplayData():
     #clear current data
@@ -159,40 +140,8 @@ def DisplayData():
         connection.commit()
         connection.close()
 
-
-    # #select query
-    # cursor=db.execute("SELECT * FROM INFO")
-    # #fetch all data from database
-    # fetch = cursor.fetchall()
-    #loop for displaying all data in GUI
-
-    # cursor.close()
-    # db.close()
-
 #calling function
 DisplayForm()
 if __name__=='__main__':
 #Running Application
  mainloop()
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
