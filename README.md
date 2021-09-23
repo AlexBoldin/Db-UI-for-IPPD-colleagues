@@ -1,5 +1,7 @@
 # Db-UI-for-IPPD-colleagues
 
+<p align="center">
+    Welcome to the database project created as a proof of concept that SQL database located in the locad SDC can be searched through with a relatively easy UI. The code encorporates the IPPD vision of how the database could be visually presented to the scientists at a stage of drug product development. Visual functional coming soon.
 
 <!-- PROJECT LOGO -->
 <br />
