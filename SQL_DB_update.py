@@ -1,10 +1,8 @@
 import pymysql
 import pandas as pd
 
-data = pd.read_excel("Solubility_Data.xlsx")#, index_col=1)
+data = pd.read_excel("Solubility_Data.xlsx")
 data = data.fillna(0)
-
-
 
 try:
     connection = pymysql.connect(
@@ -37,9 +35,6 @@ try:
     
     cursor.execute(sql)
     connection.commit()
-    
-    
-    
     cols = "`,`".join([str(i) for i in data.columns.tolist()])
 
 # Insert DataFrame recrds one by one.
@@ -59,8 +54,3 @@ finally:
     
     connection.commit()
     connection.close()
-
-    
-    
-    
-    
