@@ -11,7 +11,8 @@
   <h3 align="center">Project README document for IPPD database</h3>
 
   <p align="center">
-    Trying out how to write a README file for projects!
+    The project is created to demonstrate the database template of solubility values to the IPPD colleagues.
+    Running the database would require connectiong to the SQL SDC or a local server for proof of concept.
     <br />
   </p>
 </p>
