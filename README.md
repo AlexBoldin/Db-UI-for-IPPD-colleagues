@@ -5,7 +5,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/AlexBoldin/Db-UI-for-IPPD-colleagues/blob/main/README.md">
-    <img src="/images_description/GUI1.png" alt="Logo" width="800" height="800">
+    <img src="/images_description/GUI1.png" alt="Logo" width="800" height="600">
   </a>
 
   <h3 align="center">Project README document for IPPD database</h3>
